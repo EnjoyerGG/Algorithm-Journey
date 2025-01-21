@@ -39,7 +39,7 @@ void dfs(int u)
             path[u] = i;  // 放入空位
             state[i] = 1; // 数字被使用，修改状态
             dfs(u + 1);   // 填下一位
-            state[i] = 0; // 回溯，取出i
+            state[i] = 0; // 回溯，恢复现场
         }
     }
 }
