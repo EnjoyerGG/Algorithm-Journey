@@ -34,7 +34,7 @@ void dfs(int u)
 
     for (int i = 1; i <= n; i++)
     {
-        if (!state[i])
+        if (!state[i]) //未被使用
         {
             path[u] = i;  // 放入空位
             state[i] = 1; // 数字被使用，修改状态
