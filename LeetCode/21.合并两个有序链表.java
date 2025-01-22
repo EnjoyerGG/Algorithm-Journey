@@ -57,6 +57,7 @@ class Solution{
       p = p.next;
     }
 
+    //当其中一条链表跑完之后，将剩下没跑完的链表继续接到p后
     if(p1 != null){
       p.next = p1;
     }
@@ -67,4 +68,6 @@ class Solution{
     return dummy.next; //dummy.next才是第一个有效节点，dummy本身是虚拟节点
   }
 }
+
+//虚拟头结点：用于简化边界的情况，避免处理空指针的情况，降低代码复杂程度
 
