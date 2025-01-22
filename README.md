@@ -6,3 +6,6 @@ Update waht I have learned rightnow from AcWing.com, the basic algorithms for th
 
 <strong>2025.01.21</strong><br>
 Finished DS learnging and start to learn <strong>SEARCH and GRAPHIC THEORY</strong>.
+
+<strong>2025.01.22</strong><br>
+Update some questions from Leetcode, refered from https://labuladong.online/algo/data-structure/palindrome-linked-list/, Thumps up for it!
