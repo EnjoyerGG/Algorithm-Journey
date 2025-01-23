@@ -21,11 +21,12 @@
  
 进阶：你可以想出一个时间复杂度小于 O(n2) 的算法吗？
 */
-//有点问题？？？
+
 class Solution{
   public int[] twoSum(int[] nums, int target){
     //先对数组排序
     Arrays.sort(nums);
+   
     //左右指针
     int left = 0;
     int right = nums.length-1;
