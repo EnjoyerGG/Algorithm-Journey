@@ -21,3 +21,43 @@ class Solution{
   public void sortColors(int[] nums){
     //注意区间的开闭，初始化时区间内没有元素
     //因此定义[0,p0)为元素0的区间， (p2, nums.length-1]是2的区间
+    int p0 = 0;
+    int p2 = nums.length-1;
+    int p = 0;
+
+    //p2是开区间，所以p<=p2
+    while(p<=p2){
+      if(nums[p]==0){
+        swap(nums, p0, p);
+        p0++;
+      }
+      else if(nums[p]==2){
+        swap(nums, p2, p);
+        p2--;
+      }
+      else if(nums[p]==1){
+        p++;
+      }
+
+      //因为小于p0都是0，所以p不要小于p0
+      if(p<p0){
+        p=p0;
+      }
+    }
+  }
+
+  private void swap(int[] nums, int i, int j){
+    int temp = nums[i];
+    nums[i] = nums[j];
+    nums[j] = temp;
+  }
+}
+      
+
+
+
+
+
+
+
+      
