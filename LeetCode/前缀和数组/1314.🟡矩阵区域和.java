@@ -49,6 +49,15 @@ class NumMatrix{
       for(int j=1; j<=n; j++){
         //计算每个矩阵[0,0,i,j]的元素和
         preSum[i][j] = preSum[i-1][j] + preSum[i][j-1] + matrix[i-1][j-1] - preSum[i-1][j-1];
+      }
+    }
+  }
+
+  //计算子矩阵[x1,y1,x2,y2]的元素和
+  public int sumRegion(int x1, int y1, int x2, int y2){
+    return preSun[x2+1][y2+1] - preSum[x1][y2+1] - preSum[x2+1][y1] + preSum[x1][y1];
+  }
+}
 
 
 
