@@ -23,7 +23,8 @@ void levelOrderTraverse(TreeNode root){
     depth++;
   }
 }
- 
+
+//常用于寻找最短路径问题
 
 
 
