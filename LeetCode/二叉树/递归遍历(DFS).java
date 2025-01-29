@@ -12,3 +12,5 @@ void traverse(TreeNode root){
   traverse(root.left);
   traverse(root.right);
 }
+
+//常用于寻找所有路径的问题
