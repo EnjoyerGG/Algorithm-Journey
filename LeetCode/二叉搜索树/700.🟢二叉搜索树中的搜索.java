@@ -9,6 +9,8 @@
 输出：[]
 */
 
+//充分利用左小右大的性质
+
 TreeNode searchBST(TreeNode root, int target){
   if(root==null) return null;
   //去左子树搜索
